@@ -6,6 +6,22 @@ function handleClick(e) {
 }
 
 /* End Given Code, don't edit above here...*/
+function greet(time) {
+  let current_time = time.split(':') 
+  if (parseInt(current_time[0]) < 12) {
+    return "Good Morning";
+  } else if ((parseInt(current_time[0]) > 12) && (parseInt(current_time[0]) < 17)) {
+    return "Good Afternoon";
+  } else {
+    return "Good Evening";
+  }
+}
+
+
+function displayMessage(message) {
+  document.querySelector("#greeting").innerText = message
+}
+
 
 /* Write your implementation of greet() */
 /* Write your implementation of displayMessage() */
